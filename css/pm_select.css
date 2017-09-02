@@ -1,0 +1,287 @@
+﻿/*=================================================================================================*/
+/*※ 3. 캐릭터 선택*/
+/*=================================================================================================*/
+#frame_select {
+	position:relative;
+	width:100%;
+	height:100%;
+	
+	background:url(../images/background/event.jpg);
+	
+	display:none;
+}
+
+	#frame_select .title {
+		margin:15px auto 0px auto;
+		width:400px;
+		height:36px;
+		
+		color:white;
+		font-size:26px;
+		font-weight:bold;
+		text-align:center;
+		line-height:36px;
+	}
+	
+	#select_cha_frame {
+		position:relative;
+		overflow:hidden;
+		
+		margin:20px auto;
+		width:800px;
+		height:350px;
+		
+		background-color:rgba(0,0,0,0.2);
+		
+		text-align:center;
+	}
+				#select_cha_frame_top {
+					position:absolute;
+					left:0px;
+					top:0px;
+					
+					width:100%;
+					height:10px;
+					
+					background:url(../images/frame/select_cha_frame_top.png);
+				}
+				#select_cha_frame_bottom {
+					position:absolute;
+					left:0px;
+					bottom:0px;
+					
+					width:100%;
+					height:10px;
+					
+					background:url(../images/frame/select_cha_frame_bottom.png);
+				}
+		#select_cha_img {
+			positon:absolute;
+			top:-20px;
+			
+			visibility:hidden;
+		}
+		
+		
+		#frame_select .board {
+			padding:5px 35px;
+			width:324px;
+			height:30px;
+			box-sizing: border-box;
+			backface-visibility: hidden;
+			-webkit-backface-visibility: hidden;
+			
+			color:white;
+			font-size:14px;
+			font-weight:bold;
+			line-height:150%;
+		}
+			#select_board_cha {
+				position:absolute;
+				left:238px;
+				top:61px;
+				
+				text-align:center;
+			}
+			#select_board_name {
+				position:absolute;
+				left:238px;
+				top:401px;
+				
+				text-align:left;
+			}
+				#select_board_name input[type="text"] {
+					float:right;
+					
+					padding:0px 2px;
+					width:180px;
+					height:18px;
+					
+					border:1px gray outset;
+					
+					font-size:16px;
+					
+					display:block;
+				}
+			
+			#select_cha_frame_text {
+				position:absolute;
+				left:100px;
+				top:120px;
+				
+				width:600px;
+				height:50px;
+				
+				color:white;
+				font-size:40px;
+				/*text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+			}
+	
+	#select_cha_box {
+		overflow:hidden;
+		
+		margin:20px auto;
+		width:324px;
+		height:148px;
+	}
+		.select_cha {
+			float:left;
+			
+			width:54px;
+			height:148px;
+			
+			background-position:top left;
+			background-repeat:no-repeat;
+		}
+			#select_cha_0 {
+				background-image:url(../images/character/select_cha_0_off.png);
+			}
+				#select_cha_0:hover {
+					background-image:url(../images/character/select_cha_0_on.png);
+					
+					cursor:pointer;
+					cursor:hand;
+				}
+				#select_cha_0.selected {
+					background-image:url(../images/character/select_cha_0_click.png);
+					
+					cursor:pointer;
+					cursor:hand;
+				}
+			#select_cha_1 {
+				background-image:url(../images/character/select_cha_1_off.png);
+			}
+				#select_cha_1:hover {
+					background-image:url(../images/character/select_cha_1_on.png);
+					
+					cursor:pointer;
+					cursor:hand;
+				}
+				#select_cha_1.selected {
+					background-image:url(../images/character/select_cha_1_click.png);
+					
+					cursor:pointer;
+					cursor:hand;
+				}
+			#select_cha_2 {
+				background-image:url(../images/character/select_cha_2_off.png);
+			}
+				#select_cha_2:hover {
+					background-image:url(../images/character/select_cha_2_on.png);
+					
+					cursor:pointer;
+					cursor:hand;
+				}
+				#select_cha_2.selected {
+					background-image:url(../images/character/select_cha_2_click.png);
+					
+					cursor:pointer;
+					cursor:hand;
+				}
+			#select_cha_3 {
+				background-image:url(../images/character/select_cha_3_off.png);
+			}
+				#select_cha_3:hover {
+					background-image:url(../images/character/select_cha_3_on.png);
+					
+					cursor:pointer;
+					cursor:hand;
+				}
+				#select_cha_3.selected {
+					background-image:url(../images/character/select_cha_3_click.png);
+					
+					cursor:pointer;
+					cursor:hand;
+				}
+			#select_cha_4 {
+				background-image:url(../images/character/select_cha_4_off.png);
+			}
+				#select_cha_4:hover {
+					background-image:url(../images/character/select_cha_4_on.png);
+					
+					cursor:pointer;
+					cursor:hand;
+				}
+				#select_cha_4.selected {
+					background-image:url(../images/character/select_cha_4_click.png);
+					
+					cursor:pointer;
+					cursor:hand;
+				}
+			#select_cha_5 {
+				background-image:url(../images/character/select_cha_5_off.png);
+			}
+				#select_cha_5:hover {
+					background-image:url(../images/character/select_cha_5_on.png);
+					
+					cursor:pointer;
+					cursor:hand;
+				}
+				#select_cha_5.selected {
+					background-image:url(../images/character/select_cha_5_click.png);
+					
+					cursor:pointer;
+					cursor:hand;
+				}
+
+	
+	/*=================================================================================================*/
+	/*※ 3-1. 이동 버튼*/
+	/*=================================================================================================*/
+	#select_back {
+		position:absolute;
+		bottom:10px;
+		left:10px;
+		
+		width:160px;
+		height:50px;
+		
+		background: #FF6A00; /* default */
+		background: -moz-linear-gradient(top center, #FFFFFF, #FF6A00);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #FFFFFF), color-stop(1.00, #FF6A00));
+		background: -ms-linear-gradient(top center, #FFFFFF, #FF6A00);
+		background: linear-gradient(to bottom, #ffffff, #FF6A00);
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#ffffff, endColorstr=#FF6A00)";
+		
+		border:1px gray outset;
+		border-radius:3px;
+		
+		font-size:35px;
+		font-weight:bold;
+		text-align:center;
+	}
+		#select_back:hover {
+			border:1px white solid;
+		}
+		#select_back:active {
+			background: #FFAA00;
+		}
+	#select_start {
+		position:absolute;
+		bottom:10px;
+		right:10px;
+		
+		width:160px;
+		height:50px;
+		
+		background: #516BFF; /* default */
+		background: -moz-linear-gradient(top center, #FFFFFF, #516BFF);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #FFFFFF), color-stop(1.00, #516BFF));
+		background: -ms-linear-gradient(top center, #FFFFFF, #516BFF);
+		background: linear-gradient(to bottom, #ffffff, #516BFF);
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#ffffff, endColorstr=#516BFF)";
+		
+		border:1px gray outset;
+		border-radius:3px;
+		
+		font-size:35px;
+		font-weight:bold;
+		text-align:center;
+	}
+		#select_start:hover {
+			border:1px white solid;
+		}
+		#select_start:active {
+			background: #3855FF;
+		}
+/**/

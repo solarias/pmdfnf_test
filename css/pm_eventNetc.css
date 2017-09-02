@@ -1,0 +1,391 @@
+﻿/*=================================================================================================*/
+/*※ EX-1. 이벤트 창*/
+/*=================================================================================================*/
+	/*=================================================================================================*/
+	/*※ EX-1-0. 이벤트 창 - 기본*/
+	/*=================================================================================================*/
+#frame_event {
+	position:absolute;
+	top:0px;
+	left:0px;
+	
+	width:100%;
+	height:100%;
+	
+	display:none;
+	
+	/*테스트용*/
+	background:url(../images/background/room.jpg);
+}
+
+
+	/*=================================================================================================*/
+	/*※ EX-1-1. 이벤트창 - 이벤트*/
+	/*=================================================================================================*/
+	.event_talk {
+		position:absolute;
+		z-index:2;
+		
+		width:446px;
+		height:150px;
+		
+		display:none;
+	}
+			#event_talk_1 {
+				top:270px;
+				left:177px;
+			}
+			#event_talk_2 {
+				top:440px;
+				left:177px;
+			}
+		.event_talk_port {
+			position:absolute;
+			overflow:hidden;
+			
+			padding:10px;
+			width:140px;
+			height:150px;
+			
+			background:url(../images/frame/event_talk_port.png);
+			box-sizing: border-box;
+			backface-visibility: hidden;
+			-webkit-backface-visibility: hidden;
+		}
+				#event_talk_port_1 {
+					top:0px;
+					left:0px;
+				}
+				#event_talk_port_2 {
+					top:0px;
+					right:0px;
+				}
+			.event_talk_img {
+				position:absolute;
+				bottom:10px;
+				
+				width:120px;
+			}
+		.event_talk_name {
+			position:absolute;
+			
+			padding:5px 7px;
+			width:300px;
+			height:30px;
+			
+			box-sizing: border-box;
+			backface-visibility: hidden;
+			-webkit-backface-visibility: hidden;
+			
+			color:white;
+			font-size:14px;
+			font-weight:bold;
+			line-height:150%;
+		}
+				#event_talk_name_1 {
+					top:5px;
+					left:146px;
+				}
+				#event_talk_name_2 {
+					top:5px;
+					right:146px;
+				}
+		.event_talk_text {
+			position:absolute;
+			
+			padding:5px 7px;
+			width:300px;
+			height:105px;
+			
+			box-sizing: border-box;
+			backface-visibility: hidden;
+			-webkit-backface-visibility: hidden;
+			
+			color:white;
+			font-size:14px;
+			font-weight:bold;
+			line-height:150%;
+		}
+				#event_talk_text_1 {
+					top:44px;
+					left:146px;
+				}
+				#event_talk_text_2 {
+					top:44px;
+					right:146px;
+				}
+		.event_talk_arrow {
+			position:absolute;
+			
+			width:22px;
+			height:12px;
+			
+			background:url(../images/frame/event_arrow.gif);
+			
+			display:none;
+		}
+				#event_talk_arrow_1 {
+					top:141px;
+					left:285px;
+				}
+				#event_talk_arrow_2 {
+					top:141px;
+					right:285px;
+				}
+		
+		
+	/*=================================================================================================*/
+	/*※ EX-1-2. 이벤트창 - 일반 글*/
+	/*=================================================================================================*/
+	.event_plain {
+		position:absolute;
+		z-index:2;
+		
+		width:350px;
+		height:105px;
+		
+		display:none;
+	}
+			#event_plain_1 {
+				top:270px;
+				left:225px;
+			}
+			#event_plain_2 {
+				top:440px;
+				left:225px;
+			}
+		
+		.event_plain_text {
+			position:absolute;
+			top:0px;
+			left:0px;
+			
+			padding:5px;
+			width:350px;
+			height:105px;
+			
+			box-sizing: border-box;
+			backface-visibility: hidden;
+			-webkit-backface-visibility: hidden;
+			
+			color:white;
+			font-size:14px;
+			font-weight:bold;
+			line-height:150%;
+		}
+				#event_plain_text_1 {
+					
+				}
+				#event_plain_text_2 {
+					
+				}
+		.event_plain_arrow {	
+			position:absolute;
+			
+			width:22px;
+			height:12px;
+			
+			background:url(../images/frame/event_arrow.gif);
+			
+			display:none;
+		}
+				#event_plain_arrow_1 {
+					top:97px;
+					left:164px;
+				}
+				#event_plain_arrow_2 {
+					top:97px;
+					right:164px;
+				}
+	/*=================================================================================================*/
+	/*※ EX-1-3. 이벤트창 - 컷신*/
+	/*=================================================================================================*/
+	#event_scene {
+		position:absolute;
+		top:60px;
+		left:40px;
+		z-index:1;
+		
+		padding:10px 20px;
+		width:390px;
+		height:245px;
+		
+		background:url(../images/frame/event_scene.png);
+		box-sizing:border-box;
+		backface-visibility:hidden;
+		-webkit-backface-visibility:hidden;
+		
+		display:none;
+	}
+		#event_scene_img {
+			width:350px;
+			height:225px;
+		}
+		
+		
+	/*=================================================================================================*/
+	/*※ EX-1-4. 이벤트창 - 아이템*/
+	/*=================================================================================================*/
+	#event_item {
+		position:absolute;
+		top:220px;
+		left:200px;
+		z-index:2;
+		
+		padding:5px 10px;
+		width:auto;
+		height:40px;
+		
+		box-sizing:border-box;
+		backface-visibility:hidden;
+		-webkit-backface-visibility:hidden;
+		
+		display:none;
+	}
+		#event_item_use {
+			float:left;
+			
+			margin-right:20px;
+			
+			color:white;
+			font-size:20px;
+			font-weight:bold;
+			line-height:28px;
+		}
+		#event_item_img {
+			float:left;
+			
+			width:28px;
+			height:28px;
+			
+			border:1px yellow solid;
+			border-radius:2px;
+			
+			display:block;
+		}
+		#event_item_name {
+			float:left;
+			
+			margin-left:5px;
+			
+			color:white;
+			font-size:20px;
+			font-weight:bold;
+			line-height:28px;
+		}
+		
+		
+	/*=================================================================================================*/
+	/*※ EX-1-5. 이벤트창 - 선택지*/
+	/*=================================================================================================*/
+	#event_choose {
+		position:absolute;
+		top:260px;
+		right:30px;
+		z-index:6;
+		
+		padding:12px;
+		width:130px;
+		height:auto;
+		
+		text-align:center;
+		
+		display:none;
+	}
+		#event_choose span {
+			margin:2px 0px;
+			padding:3px;
+			width:100px;
+			
+			color:white;
+			font-weight:bold;
+			line-height:100%;
+			
+			display:inline-block;
+		}
+			#event_choose span:hover {
+				box-shadow:0 0 3pt 2pt white;
+				cursor:pointer;
+				cursor:hand;
+			}
+		
+	/*=================================================================================================*/
+	/*※ EX-1-6. 이벤트창 - 기타 요소*/
+	/*=================================================================================================*/
+	#event_info {
+		position:absolute;
+		top:20px;
+		left:180px;
+		z-index:5;
+		
+		padding:4px 10px;
+		width:440px;
+		height:36px;
+		
+		box-sizing: border-box;
+		backface-visibility: hidden;
+		-webkit-backface-visibility: hidden;
+		
+		color:white;
+		font-size:25px;
+		font-weight:bold;
+		text-align:center;
+		line-height:110%;
+	}
+	#event_cover {
+		position:absolute;
+		top:0px;
+		left:0px;
+		z-index:5;
+		
+		width:100%;
+		height:100%;
+		
+		zoom:1;
+	}
+/**/
+
+
+
+
+
+
+/*=================================================================================================*/
+/*※ EX-2. 이미지 선로딩 저장소*/
+/*=================================================================================================*/
+#imagePreloader {
+	width:1px;
+	height:1px;
+	
+	display:none;
+}
+/*=================================================================================================*/
+/*※ EX. 기타*/
+/*=================================================================================================*/
+
+
+
+
+
+/*모바일 스크롤바 가시화*/
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+    width: 12px;
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ffffff; 
+}

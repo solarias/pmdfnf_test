@@ -1,0 +1,366 @@
+﻿@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+* {
+	padding:0px;
+	margin:0px;
+	border:0px;
+	
+	font-family:Arial;
+	font-size:16px;
+	text-decoration:none;
+}
+/**/
+
+
+
+/*=================================================================================================*/
+/*※ 0. 전체*/
+/*=================================================================================================*/
+body {
+	background-color:#FFFFCC;
+}
+	p, span {
+		font-size:inherit;
+	}
+	
+#wrapper {
+	overflow:hidden;
+	margin:0px auto;
+	width:800px;
+	height:600px;
+	
+	border:1px black solid;
+}
+/**/
+
+
+	
+/*=================================================================================================*/
+/*※ 1. 첫 화면*/
+/*=================================================================================================*/
+#frame_title {
+	position:relative;
+	width:100%;
+	height:100%;
+	
+	background:url(../images/background/title.jpg);
+}
+	#title_title {
+		position:absolute;
+		top:40px;
+		left:20px;
+		
+		color:white;
+		font-size:60px;
+		font-weight:bold;
+		font-style:italic;
+	}
+	
+	#title_menu {
+		position:absolute;
+		bottom:110px;
+		left:60px;
+	}
+		#title_menu div {
+			margin-top:15px;
+			
+			padding:5px;
+			width:230px;
+			height:40px;
+			
+			color:white;
+			font-size:40px;
+			line-height:100%;
+		}
+				#title_menu div.no {
+					color:gray;
+				}
+				#title_menu div.no:hover {
+					cursor:default;
+					cursor:;
+				}
+			#title_menu div:not(.no):hover {
+				box-shadow:0 0 3pt 2pt white;
+				cursor:pointer;
+				cursor:hand;
+			}
+			#title_menu div:not(.no):active {
+				
+			}
+/**/
+
+
+	
+/*=================================================================================================*/
+/*※ 2. 갤러리*/
+/*=================================================================================================*/
+/**/
+
+
+	
+/*=================================================================================================*/
+/*※ 3. 캐릭터 선택*/
+/*=================================================================================================*/
+#frame_select {
+	position:relative;
+	width:100%;
+	height:100%;
+	
+	background:url(../images/background/event.jpg);
+	
+	display:none;
+}
+	.select_title1 {
+		margin:35px auto 0px auto;
+		width:400px;
+		height:36px;
+		
+		background:url(../images/title_background.png);
+		
+		color:white;
+		font-size:26px;
+		font-weight:bold;
+		text-align:center;
+		line-height:36px;
+	}
+	.select_title2 {
+		margin:25px auto 0px auto;
+		width:170px;
+		height:36px;
+		
+		background:url(../images/title2_background.png);
+		
+		color:white;
+		font-size:26px;
+		font-weight:bold;
+		text-align:center;
+		line-height:135%;
+	}
+	.select_board {
+		margin:0px auto 0px auto;
+		padding:10px;
+		width:378px;
+		height:36px;
+		
+		background:url(../images/board_background.png);
+		box-sizing: border-box;
+		backface-visibility: hidden;
+		-webkit-backface-visibility: hidden;
+		
+		color:white;
+		font-size:16px;
+		font-weight:bold;
+		text-align:center;
+		line-height:16px;
+	}
+	.select_board.no_padding {
+		padding:0px;
+	}
+		.select_board input[type="button"] {
+			margin:5px 10px;
+			width:150px;
+			height:25px;
+			
+			border:1px gray outset;
+			
+			font-weight:bold;
+		}
+	
+	/*=================================================================================================*/
+	/*※ 3-1. 직업 선택*/
+	/*=================================================================================================*/
+	#select_job {
+		
+	}
+	
+			#select_box {
+				overflow:hidden;
+				
+				margin:0px auto;
+				width:378px;
+				height:148px;
+			}
+				.select_cha {
+					float:left;
+					
+					width:54px;
+					height:148px;
+					
+					background-position:top left;
+					background-repeat:no-repeat;
+				}
+					#select_cha_0 {
+						background-image:url(../images/character/select_cha_0_off.png);
+					}
+						#select_cha_0:hover, #select_cha_0.selected {
+							background-image:url(../images/character/select_cha_0_click.png);
+							
+							cursor:pointer;
+							cursor:hand;
+						}
+					#select_cha_1 {
+						background-image:url(../images/character/select_cha_1_off.png);
+					}
+						#select_cha_1:hover, #select_cha_1.selected {
+							background-image:url(../images/character/select_cha_1_click.png);
+							
+							cursor:pointer;
+							cursor:hand;
+						}
+					#select_cha_2 {
+						background-image:url(../images/character/select_cha_2_off.png);
+					}
+						#select_cha_2:hover, #select_cha_2.selected {
+							background-image:url(../images/character/select_cha_2_click.png);
+							
+							cursor:pointer;
+							cursor:hand;
+						}
+					#select_cha_3 {
+						background-image:url(../images/character/select_cha_3_off.png);
+					}
+						#select_cha_3:hover, #select_cha_3.selected {
+							background-image:url(../images/character/select_cha_3_click.png);
+							
+							cursor:pointer;
+							cursor:hand;
+						}
+					#select_cha_4 {
+						background-image:url(../images/character/select_cha_4_off.png);
+					}
+						#select_cha_4:hover, #select_cha_4.selected {
+							background-image:url(../images/character/select_cha_4_click.png);
+							
+							cursor:pointer;
+							cursor:hand;
+						}
+					#select_cha_5 {
+						background-image:url(../images/character/select_cha_5_off.png);
+					}
+						#select_cha_5:hover, #select_cha_5.selected {
+							background-image:url(../images/character/select_cha_5_click.png);
+							
+							cursor:pointer;
+							cursor:hand;
+						}
+					#select_cha_c {
+						background-image:url(../images/character/select_cha_c_off.png);
+					}
+						#select_cha_c:hover, #select_cha_c.selected {
+							background-image:url(../images/character/select_cha_c_click.png);
+							
+							cursor:pointer;
+							cursor:hand;
+						}
+	
+	
+	/*=================================================================================================*/
+	/*※ 3-2. 일러스트 결정*/
+	/*=================================================================================================*/
+	
+	
+	/*=================================================================================================*/
+	/*※ 3-3. 이름 결정*/
+	/*=================================================================================================*/
+	
+	
+	/*=================================================================================================*/
+	/*※ 3-4. 기타*/
+	/*=================================================================================================*/
+	#select_back {
+		position:absolute;
+		bottom:10px;
+		left:10px;
+		
+		width:180px;
+		height:50px;
+		
+		background: #FF6A00; /* default */
+		background: -moz-linear-gradient(top center, #FFFFFF, #FF6A00);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #FFFFFF), color-stop(1.00, #FF6A00));
+		background: -ms-linear-gradient(top center, #FFFFFF, #FF6A00);
+		background: linear-gradient(to bottom, #ffffff, #FF6A00);
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#ffffff, endColorstr=#FF6A00)";
+		
+		border:1px gray outset;
+		border-radius:3px;
+		
+		font-size:35px;
+		font-weight:bold;
+	}
+		#select_back:hover {
+			border:1px white solid;
+		}
+		#select_back:active {
+			background: #FFAA00;
+		}
+	#select_start {
+		position:absolute;
+		bottom:10px;
+		right:10px;
+		
+		width:180px;
+		height:50px;
+		
+		background: #516BFF; /* default */
+		background: -moz-linear-gradient(top center, #FFFFFF, #516BFF);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #FFFFFF), color-stop(1.00, #516BFF));
+		background: -ms-linear-gradient(top center, #FFFFFF, #516BFF);
+		background: linear-gradient(to bottom, #ffffff, #516BFF);
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#ffffff, endColorstr=#516BFF)";
+		
+		border:1px gray outset;
+		border-radius:3px;
+		
+		font-size:35px;
+		font-weight:bold;
+	}
+		#select_start:hover {
+			border:1px white solid;
+		}
+		#select_start:active {
+			background: #3855FF;
+		}
+/**/
+
+
+	
+/*=================================================================================================*/
+/*※ 4. 방*/
+/*=================================================================================================*/
+/**/
+
+
+	
+/*=================================================================================================*/
+/*※ 5. 첫 화면*/
+/*=================================================================================================*/
+/**/
+
+
+	
+/*=================================================================================================*/
+/*※ EX. 기타*/
+/*=================================================================================================*/
+
+
+
+/*폰트 - 색상*/
+/*폰트 - 꾸미기*/
+.font_bold {
+	font-weight:bold;
+}
+
+.font_left {
+	text-align:left;
+}
+.font_right {
+	text-align:right;
+}
+
+.pos_left {
+	float:left;
+}
+.pos_right {
+	float:right;
+}

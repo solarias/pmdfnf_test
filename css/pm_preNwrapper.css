@@ -1,0 +1,220 @@
+﻿@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+* {
+	padding:0px;
+	margin:0px;
+	border:0px;
+	
+	font-family:Arial;
+	font-size:16px;
+	text-decoration:none;
+}
+
+	
+/*드래그 방지 (IE8 이하 : 작동 X)*/
+*:not(input) {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/**/
+
+
+
+/*=================================================================================================*/
+/*※ 0. 전체 디자인*/
+/*=================================================================================================*/
+	/*=================================================================================================*/
+	/*※ 0-1. 프레임*/
+	/*=================================================================================================*/
+body {
+	background-color:#FFFFCC;
+}
+	p, span {
+		font-size:inherit;
+	}
+	
+#wrapper {
+	position:relative;
+	overflow:hidden;
+	
+	margin:0px auto;
+	width:800px;
+	height:600px;
+	
+	border:1px black solid;
+}
+	/*=================================================================================================*/
+	/*※ 0-2. 세부 디자인*/
+	/*=================================================================================================*/
+	/*※ A. 폰트*/
+		/*폰트 - 색상*/
+		/*폰트 - 크기*/
+		.font_20 {
+			font-size:20px;
+		}
+		/*폰트 - 꾸미기*/
+		.font_bold {
+			font-weight:bold;
+		}
+		/*폰트 - 정렬*/
+		.font_left {
+			text-align:left;
+		}
+		.font_center {
+			text-align:center;
+		}
+		.font_right {
+			text-align:right;
+		}
+
+	/*※ B. DIV*/
+		/*프레임 배경 - 노란 테두리*/
+		.frame_borderY {
+			background-color:#552B2B;
+			background-image:
+				url(../images/frame/borderY_top_left.png),
+				url(../images/frame/borderY_top_right.png),
+				url(../images/frame/borderY_bottom_right.png),
+				url(../images/frame/borderY_bottom_left.png),
+				url(../images/frame/borderY_top.png),
+				url(../images/frame/borderY_right.png),
+				url(../images/frame/borderY_bottom.png),
+				url(../images/frame/borderY_left.png);
+			background-position:
+				top left,
+				top right,
+				bottom right,
+				bottom left,
+				top,
+				right,
+				bottom,
+				left;
+			background-repeat:
+				no-repeat,
+				no-repeat,
+				no-repeat,
+				no-repeat,
+				repeat-x,
+				repeat-y,
+				repeat-x,
+				repeat-y;
+		}
+		/*프레임 배경 - 흰색 테두리*/
+		.frame_borderW {
+			background-color:#552B2B;
+			background-image:
+				url(../images/frame/borderW_top_left.png),
+				url(../images/frame/borderW_top_right.png),
+				url(../images/frame/borderW_bottom_right.png),
+				url(../images/frame/borderW_bottom_left.png),
+				url(../images/frame/borderW_top.png),
+				url(../images/frame/borderW_right.png),
+				url(../images/frame/borderW_bottom.png),
+				url(../images/frame/borderW_left.png);
+			background-position:
+				top left,
+				top right,
+				bottom right,
+				bottom left,
+				top,
+				right,
+				bottom,
+				left;
+			background-repeat:
+				no-repeat,
+				no-repeat,
+				no-repeat,
+				no-repeat,
+				repeat-x,
+				repeat-y,
+				repeat-x,
+				repeat-y;
+		}
+		/*프레임 배경 - (절반만) 흰색 테두리*/
+		.frame_borderW_half {
+			background-color:#552B2B;
+			background-image:
+				url(../images/frame/borderW_bottom_right.png),
+				url(../images/frame/borderW_bottom_left.png),
+				url(../images/frame/borderW_right.png),
+				url(../images/frame/borderW_bottom.png),
+				url(../images/frame/borderW_left.png);
+			background-position:
+				bottom right,
+				bottom left,
+				right,
+				bottom,
+				left;
+			background-repeat:
+				no-repeat,
+				no-repeat,
+				repeat-y,
+				repeat-x,
+				repeat-y;
+		}
+		/*프레임 배경 - 버튼*/
+			/*1. 대기*/
+			.frame_button {
+				background-color:#554499;
+				background-image:
+					url(../images/frame/button_top_left.png),
+					url(../images/frame/button_top_right.png),
+					url(../images/frame/button_bottom_right.png),
+					url(../images/frame/button_bottom_left.png),
+					url(../images/frame/button_top.png),
+					url(../images/frame/button_right.png),
+					url(../images/frame/button_bottom.png),
+					url(../images/frame/button_left.png);
+				background-position:
+					top left,
+					top right,
+					bottom right,
+					bottom left,
+					top,
+					right,
+					bottom,
+					left;
+				background-repeat:
+					no-repeat,
+					no-repeat,
+					no-repeat,
+					no-repeat,
+					repeat-x,
+					repeat-y,
+					repeat-x,
+					repeat-y;
+					
+				color:pink;
+				font-weight:bold;
+				text-align:center;
+				text-shadow:0 1px black, 1px 0 black;
+			}
+			/*2. 호버*/
+			.frame_button:hover {
+				
+			}
+			/*3. 액티브*/
+			.frame_button:active {
+				
+			}
+		
+		/*막대 - 배경*/
+		.bar_cover {
+			background:#3D1111;
+			border:1px #9C4951 solid;
+		}
+		/*막대 - 그라디언트*/
+		.bar_gradient {
+			background: #fc0000; /* Old browsers */
+			background: -moz-linear-gradient(top, #fc0000 0%, #fcfcfc 28%, #fcfcfc 42%, #fc0000 62%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fc0000), color-stop(28%,#fcfcfc), color-stop(42%,#fcfcfc), color-stop(62%,#fc0000)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, #fc0000 0%,#fcfcfc 28%,#fcfcfc 42%,#fc0000 62%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, #fc0000 0%,#fcfcfc 28%,#fcfcfc 42%,#fc0000 62%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top, #fc0000 0%,#fcfcfc 28%,#fcfcfc 42%,#fc0000 62%); /* IE10+ */
+			background: linear-gradient(to bottom, #fc0000 0%,#fcfcfc 28%,#fcfcfc 42%,#fc0000 62%); /* W3C */
+		}
+/**/

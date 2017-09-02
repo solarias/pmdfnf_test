@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="./css/pm_preNwrapper.css" />
+		<link rel="stylesheet" type="text/css" href="./css/pm_loadingNtitleNgallery.css" />
+		<link rel="stylesheet" type="text/css" href="./css/pm_select.css" />
+		<link rel="stylesheet" type="text/css" href="./css/pm_eventNetc.css" />
+		
+		<title>프린세스 메이커 DNF</title>
+		
+	</head>
+	<body>
+		<div id="wrapper">
+		
+	<!--------------------------------------------------------------------------------------------------------->
+	<!--------------------------------------------------------------------------------------------------------->
+			
+			
+			<!--로딩 & 경고 / 시작-->
+			<div id="frame_loading">
+				<div id="loading_caution" class="frame_borderY">
+					<p class="font_bold font_center">※ 경고 : 데이터 소모 주의</p>
+					<p>이 게임에서는 다양한 이미지와 음악을 사용합니다. 모바일에서 실행 시, 상당한 데이터 소모를 유발할 수도 있습니다.</p>
+					<input id="loading_start" type="button" value="게임 실행" />
+				</div>
+				<div id="loading_state" class="frame_borderW_half">
+					<div id="loading_state_progress" class="bar_cover">
+						<div id="loading_state_bar" class="bar_gradient">
+						</div>
+						<div id="loading_state_num">
+						0%
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--로딩 & 경고 / 시작-->
+			
+			
+	<!--------------------------------------------------------------------------------------------------------->
+	<!--------------------------------------------------------------------------------------------------------->
+			
+			
+			<!--메인 메뉴 / 시작-->
+			<div id="frame_title">
+				<span id="title_title">프린세스 메이커 DNF</span>
+				
+				<div id="title_menu" class="menu">
+					<div id="title_menu_continue" class="no">CONTINUE</div>
+					<div id="title_menu_new" class="">NEW GAME</div>
+					<div id="title_menu_gallery" class="no">GALLERY</div>
+				</div>
+			</div>
+			<!--메인 메뉴 / 끝-->
+			
+			
+	<!--------------------------------------------------------------------------------------------------------->
+	<!--------------------------------------------------------------------------------------------------------->
+			
+			
+			<!--갤러리 / 시작-->
+			<div id="frame_gallery">
+				
+				<!--엔딩 컷 / 시작-->
+				<div id="gallery_image">
+				</div>
+				<!--엔딩 컷 / 끝-->
+				
+			</div>
+			<!--갤러리 / 끝-->
+			
+			
+	<!--------------------------------------------------------------------------------------------------------->
+	<!--------------------------------------------------------------------------------------------------------->
+			
+			
+			<!--딸 직업 선택 / 시작-->
+			<div id="frame_select">
+	
+				<div class="title frame_borderY">당신의 딸은 누구인가요?</div>
+					<div id="select_cha_frame">
+						<img id="select_cha_img" src="" />
+						<div id="select_cha_frame_top"></div>
+						<div id="select_cha_frame_bottom"></div>
+						
+						<div id="select_cha_frame_text">딸의 직업과 이름을 설정해주세요</div>
+					</div>
+					
+					<div id="select_board_cha" class="board frame_borderW">딸의 직업 : 없음</div>
+					<div id="select_board_name" class="board frame_borderW">딸 이름 : <input id="cha_name_input" type="text" value = ""/></div>
+					
+					<div id="select_cha_box">
+						<div id="select_cha_0" class="select_cha"></div>
+						<div id="select_cha_1" class="select_cha"></div>
+						<div id="select_cha_2" class="select_cha"></div>
+						<div id="select_cha_3" class="select_cha"></div>
+						<div id="select_cha_4" class="select_cha"></div>
+						<div id="select_cha_5" class="select_cha"></div>
+					</div>
+				
+				<!--공통 : 진행버튼-->
+				<input id="select_back" type="button" value="취소" />
+				<input id="select_start" type="button" value="시작" disabled/>
+				
+			</div>
+			<!--딸 직업 선택 / 끝-->
+			
+			
+	<!--------------------------------------------------------------------------------------------------------->
+	<!--------------------------------------------------------------------------------------------------------->
+			
+			
+			<!--자기집 / 시작-->
+			<div id="frame_home">
+				
+				<!--기본 / 시작-->
+				<div id="frame_room">
+				</div>
+				<!--기본 / 끝-->
+				
+				
+				<!--스케줄 설정 / 시작-->
+				<div id="frame_schedule">
+				</div>
+				<!--스케줄 설정 / 끝-->
+				
+				
+				
+				<!--전투 / 시작-->
+				<div id="frame_battle">
+				</div>
+				<!--전투 / 끝-->
+				
+				
+				<!--엔딩화면 / 시작-->
+				<div id="frame_ending">
+				</div>
+				<!--엔딩화면 / 끝-->
+				
+			</div>
+			<!--자기집 / 끝-->
+			
+			
+	<!--------------------------------------------------------------------------------------------------------->
+	<!--------------------------------------------------------------------------------------------------------->
+			
+			
+			<!--EX-1 - 이벤트창 / 시작-->
+			<div id="frame_event">
+				<!--EX-1-1 - 이벤트창 - 이벤트 / 시작-->
+				<div id="event_talk_1" class="event_talk">
+					<div id="event_talk_port_1" class="event_talk_port">
+						<img id="event_talk_img_1" class="event_talk_img" src="" />
+					</div>
+					<div id="event_talk_name_1" class="event_talk_name frame_borderW"></div>
+					<div id="event_talk_text_1" class="event_talk_text frame_borderW"></div>
+					
+					<div id="event_talk_arrow_1" class="event_talk_arrow"></div>
+				</div>
+				
+				<div id="event_talk_2" class="event_talk">
+					<div id="event_talk_port_2" class="event_talk_port">
+						<img id="event_talk_img_2" class="event_talk_img" src="" />
+					</div>
+					<div id="event_talk_name_2" class="event_talk_name frame_borderW"></div>
+					<div id="event_talk_text_2" class="event_talk_text frame_borderW"></div>
+					
+					<div id="event_talk_arrow_2" class="event_talk_arrow"></div>
+				</div>
+				<!--EX-1-1 - 이벤트창 - 이벤트 / 끝-->
+				
+				<!--EX-1-2 - 이벤트창 - 일반 글 / 시작-->
+				<div id="event_plain_1" class="event_plain">
+					<div id="event_plain_text_1" class="event_plain_text frame_borderW"></div>
+					
+					<div id="event_plain_arrow_1" class="event_plain_arrow"></div>
+				</div>
+				
+				<div id="event_plain_2" class="event_plain">
+					<div id="event_plain_text_2" class="event_plain_text frame_borderW"></div>
+					
+					<div id="event_plain_arrow_2" class="event_plain_arrow"></div>
+				</div>
+				<!--EX-1-2 - 이벤트창 - 일반 글 / 끝-->
+				
+				<!--EX-1-3 - 이벤트창 - 컷신 / 시작-->
+				<div id="event_scene">
+					<img id="event_scene_img" src="" />
+				</div>
+				<!--EX-1-3 - 이벤트창 - 컷신 / 끝-->
+				
+				<!--EX-1-4 - 이벤트창 - 아이템 / 시작-->
+				<div id="event_item" class="frame_borderW">
+					<div id="event_item_use"></div>
+					<img id="event_item_img" />
+					<div id="event_item_name"></div>
+				</div>
+				<!--EX-1-4 - 이벤트창 - 아이템 / 끝-->
+				
+				<!--EX-1-5 - 이벤트창 - 선택지 / 시작-->
+				<div id="event_choose" class="frame_borderY">
+				</div>
+				<!--EX-1-5 - 이벤트창 - 선택지 / 시작-->
+				
+				<!--EX-1-6 - 이벤트창 - 기타 요소 / 시작-->
+				<!--<div id="event_info" class="frame_borderW">화면을 클릭하면 대화가 진행됩니다.</div>-->
+				<div id="event_cover"></div>
+				<!--EX-1-6 - 이벤트창 - 기타 요소 / 끝-->
+			</div>
+			<!--공통 -  이벤트 배경 / 끝-->
+			
+			
+		</div>
+	<!--------------------------------------------------------------------------------------------------------->
+	<!--------------------------------------------------------------------------------------------------------->
+		
+		<!--기타 - 이미지 선로딩 저장소/ 시작-->
+		<div id="imagePreloader"></div>
+		<!--기타 - 이미지 선로딩 저장소/ 끝-->
+		
+	<!--------------------------------------------------------------------------------------------------------->
+	<!--------------------------------------------------------------------------------------------------------->
+		
+	<!--------------------------------------------------------------------------------------------------------->
+	<!--------------------------------------------------------------------------------------------------------->
+		
+		
+		<!--스크립트 / 시작-->
+			
+			<!--자료 / 시작-->
+			<script type="text/javascript" src="./js/pm_basicVariable.js"></script><!--기본 변수-->
+			
+			<script type="text/javascript" src="./js/pm_portraitList.js"></script><!--인물 자료-->
+			<script type="text/javascript" src="./js/pm_itemList.js"></script><!--아이템 자료-->
+			<!--자료 / 씉-->
+		
+			<!--기초 / 시작-->
+			<script type="text/javascript" src="./js/pm_basicFunction.js"></script>
+			<!--기초 / 끝-->
+			
+			<!--시스템 / 시작-->
+			<script type="text/javascript" src="./js/pm_runEvent.js"></script><!--이벤트 실행-->
+			<!--시스템 / 끝-->
+			
+			<!--이벤트 관리 / 시작-->
+			<!--이벤트 관리 / 끝-->
+			
+			<!--실행 / 시작-->
+			<script type="text/javascript" src="./js/pm_execute.js"></script>
+			<!--실행  / 끝-->
+			
+		<!--스크립트 / 끝-->
+	
+	
+	<!--------------------------------------------------------------------------------------------------------->
+	<!--------------------------------------------------------------------------------------------------------->
+	
+	<!--------------------------------------------------------------------------------------------------------->
+	<!--------------------------------------------------------------------------------------------------------->
+	
+	</body>
+</html>

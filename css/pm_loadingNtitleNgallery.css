@@ -1,0 +1,166 @@
+﻿/*=================================================================================================*/
+/*※ 0. 로딩 & 경고*/
+/*=================================================================================================*/
+#frame_loading {
+	position:relative;
+	width:100%;
+	height:100%;
+	
+	background:black;
+	
+	display:inline-block;
+}
+	#loading_caution {
+		position:absolute;
+		top:100px;
+		left:275px;
+		z-index:2;
+		
+		padding:10px;
+		width:250px;
+		height:170px;
+		
+		box-sizing:border-box;
+		backface-visibility:hidden;
+		-webkit-backface-visibility:hidden;
+		
+		color:white;
+	}
+		#loading_caution p {
+			margin:0px 0px 3px 0px;
+		}
+		#loading_caution input {
+			margin:8px auto 0px auto;
+			
+			width:170px;
+			height:40px;
+			
+			background: #FFFFFF; /* default */
+			background: -moz-linear-gradient(top center, #FFFFFF, #A0A0A0);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #FFFFFF), color-stop(1.00, #A0A0A0));
+			background: -ms-linear-gradient(top center, #FFFFFF, #A0A0A0);
+			background: linear-gradient(to bottom, #ffffff, #A0A0A0);
+			-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#ffffff, endColorstr=#A0A0A0)";
+			
+			border:1px gray solid;
+			border-radius:5px;
+			
+			font-size:28px;
+			font-weight:bold;
+			
+			display:block;
+		}
+			#loading_caution input:hover {
+				box-shadow:0 0 3pt 2pt white;
+				cursor:pointer;
+				cursor:hand;
+			}
+			#loading_caution input:active {
+				background:#DEDEDE;
+			}
+	
+	#loading_state {
+		position:absolute;
+		top:235px;
+		left:275px;
+		z-index:1;
+		
+		width:250px;
+		height:35px;
+	}
+		#loading_state_progress {
+			overflow:hidden;
+			position:relative;
+			
+			margin:5px auto;
+			width:220px;
+			height:20px;
+		}
+			#loading_state_bar {
+				position:absolute;
+				top:0px;
+				left:0px;
+				z-index:2;
+				
+				width:0%;
+				height:100%;	
+			}
+			#loading_state_num {
+				position:absolute;
+				top:0px;
+				left:0px;
+				z-index:3;
+				
+				width:100%;
+				
+				color:white;
+				font-weight:bold;
+				text-align:center;
+				text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+			}
+/**/
+
+
+	
+/*=================================================================================================*/
+/*※ 1. 메인 메뉴*/
+/*=================================================================================================*/
+#frame_title {
+	position:relative;
+	width:100%;
+	height:100%;
+	
+	background:url(../images/background/title.jpg);
+	
+	display:none;
+}
+	#title_title {
+		position:absolute;
+		top:40px;
+		left:20px;
+		
+		color:white;
+		font-size:60px;
+		font-weight:bold;
+		font-style:italic;
+	}
+	
+	#title_menu {
+		position:absolute;
+		bottom:110px;
+		left:60px;
+	}
+		#title_menu div {
+			margin-top:15px;
+			
+			padding:5px;
+			width:230px;
+			height:40px;
+			
+			color:white;
+			font-size:40px;
+			line-height:100%;
+		}
+				#title_menu div.no {
+					color:gray;
+				}
+				#title_menu div.no:hover {
+					cursor:default;
+					cursor:;
+				}
+			#title_menu div:not(.no):hover {
+				box-shadow:0 0 3pt 2pt white;
+				cursor:pointer;
+				cursor:hand;
+			}
+			#title_menu div:not(.no):active {
+				
+			}
+/**/
+
+
+	
+/*=================================================================================================*/
+/*※ 2. 갤러리*/
+/*=================================================================================================*/
+/**/
